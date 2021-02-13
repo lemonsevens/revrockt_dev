@@ -8,7 +8,7 @@ const NavItem = (props) => (
       className="relative flex items-center self-stretch justify-center px-2 text-gray-400 transition-all duration-200 xl:pl-4 hover:text-gray-300"
     >
       <i className={`text-4xl fas fa-${props.icon}`} />
-      <div className="flex flex-col ml-3 text-xl font-bold leading-none xl:text-2xl">
+      <div className="flex flex-col ml-3 text-lg font-bold leading-none xl:text-xl">
         {props.main}
         <span className="mt-1 text-xs font-normal leading-none xl:-mt-2 xl:text-sm opacity-60">
           {props.sub}
@@ -70,7 +70,7 @@ export default function Nav() {
           >
             <i className="far fa-smile"></i> We're hiring!
           </a>
-          <div class="flex rounded border-b-2 border-grey-dark overflow-hidden">
+          <div className="flex overflow-hidden border-b-2 rounded border-grey-dark">
             <a
               href="/login"
               class="flex group items-center transition-all duration-200"
