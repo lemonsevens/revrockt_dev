@@ -16,6 +16,11 @@ module.exports = {
       transparent: "transparent",
       current: "currentColor",
 
+      dark: "#1A1538",
+      clientMain: "#5F578E",
+      clientIcon: "#403C58",
+      darkText: "#807C97",
+
       black: colors.black,
       white: colors.white,
       gray: colors.coolGray,

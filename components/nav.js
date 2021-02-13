@@ -5,7 +5,7 @@ const NavItem = (props) => (
     <a
       href={props.href}
       title={props.main}
-      className="relative flex items-center self-stretch justify-center px-2 text-gray-400 transition-all duration-200 xl:pl-4 hover:text-gray-300"
+      className="relative flex items-center self-stretch justify-center px-2 transition-all duration-200 text-darkText xl:pl-4 hover:text-gray-300"
     >
       <i className={`text-4xl fas fa-${props.icon}`} />
       <div className="flex flex-col ml-3 text-lg font-bold leading-none xl:text-xl">
@@ -22,7 +22,7 @@ const NavItem = (props) => (
 
 export default function Nav() {
   return (
-    <header className="flex items-center justify-between pl-8 mx-auto bg-indigo-900 lg:justify-start md:space-x-10">
+    <header className="flex items-center justify-between pl-8 mx-auto bg-dark lg:justify-start md:space-x-10">
       <div className="flex justify-start sm:w-40 logo lg:w-52">
         <Image
           src="/../public/revrockt_logo--dark.png"
@@ -63,24 +63,21 @@ export default function Nav() {
         </ul>
       </nav>
       <div className="items-stretch self-stretch justify-end hidden lg:flex-3 action-links lg:flex">
-        <div className="flex flex-col justify-center mr-3 space-y-3 text-center">
+        <div className="flex flex-col items-start justify-center mr-3 space-y-3 text-center ">
           <a
             href="/jobs"
-            className="text-indigo-400 transition-all duration-200"
+            className="text-lg transition-all duration-200 text-darkText hover:text-gray-300"
           >
             <i className="far fa-smile"></i> We're hiring!
           </a>
-          <div className="flex overflow-hidden border-b-2 rounded border-grey-dark">
-            <a
-              href="/login"
-              class="flex group items-center transition-all duration-200"
-            >
-              <div className="px-4 py-3 bg-blue-200 group-hover:bg-blue-400 shadow-border">
+          <div className="flex overflow-hidden border-b-2 rounded border-clientIcon hover:border-gray-500">
+            <a href="/login" className="flex items-center group">
+              <div className="px-4 py-3 bg-clientIcon ">
                 <div className="w-4 h-5">
                   <i className="text-white fill-current fas fa-user"></i>
                 </div>
               </div>
-              <span className="px-4 py-3 font-sans text-sm font-bold tracking-wide text-white uppercase bg-blue-400 shadow-border group-hover:bg-blue-600">
+              <span className="px-4 py-3 font-sans text-sm font-bold tracking-wide text-white uppercase bg-clientMain group-hover:bg-clientIcon">
                 Client Login
               </span>
             </a>

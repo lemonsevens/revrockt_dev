@@ -19,8 +19,7 @@
     "next": "^10.0.6",
     "postcss": "^8.2.6",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "tailwindcss-children": "^2.1.0"
+    "react-dom": "^17.0.1"
   },
   "devDependencies": {
     "postcss-preset-env": "^6.7.0",
